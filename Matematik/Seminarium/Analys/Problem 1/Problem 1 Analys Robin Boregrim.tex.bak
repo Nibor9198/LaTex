@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\begin{document}
+\title{Analys Problem 1}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Beräkna gränsvärdet av 
+$$x_n = \frac{\sqrt{1+2n}-3}{\sqrt{n}-2}$$
+när $n$ går mot oändligheten.
+\section{Lösning}
+\subsection{Observationer}
+Om vi observerar gränsvärdet för $x_n$
+\begin{equation} \label{eq:start}
+\lim_{n\rightarrow \infty} \Bigg(\frac{\sqrt{1+2n}-3}{\sqrt{n}-2} \Bigg)
+\end{equation}
+ser vi att den är ett gränsvärde av typen "$\frac{\infty}{\infty}$" eftersom
+$$\sqrt{1+2n}-3 \rightarrow \infty$$
+och 
+$$\sqrt{n}-2 \rightarrow \infty.$$
+Detta betyder att vi inte bara kan räkna ut gränsvärdet direkt eftersom gränsvärden av typen "$\frac{\infty}{\infty}$" kan anta flera värden. Vi måste därför skriva om (\ref{eq:start})på ett sätt att gränsvärdet kan räknas ut.
+\subsection{Uträkningar}
+Vi börjar med att dela täljaren i (\ref{eq:start}) med nämnaren så långt som det går, vi kommer då få en kvot $k$ och rest $r$ i formen$$k + \frac{r}{\sqrt{n} -2}.$$\newpage
+Med lite räkning får vi ut att ett godtyckligt värde på kvoten $k$ är
+$$k = \sqrt{\frac{1}{n} + 2}$$ och dess tillhörande rest är då
+$$r = \frac{2\cdot\sqrt{\frac{1}{n} + 2} -3}{\sqrt{n}-2}.$$
+Detta leder till att
+$$(\ref{eq:start}) = \lim_{n\rightarrow \infty} \Bigg( \sqrt{\frac{1}{n} + 2} + \frac{2\cdot\sqrt{\frac{1}{n} + 2} -3}{\sqrt{n}-2}\Bigg).$$\\
+
+
+Vi vet att när $n \rightarrow \infty$ så
+\begin{equation} \label{eq:zero}
+\frac{1}{n} \rightarrow 0
+\end{equation}
+och
+\begin{equation} \label{eq:inf}
+\sqrt{n} \rightarrow \infty.
+\end{equation}
+
+Av (\ref{eq:zero}) följer att när $n \rightarrow \infty$
+$$\sqrt{\frac{1}{n} + 2} \rightarrow \sqrt{0 + 2} = \sqrt{2}$$
+och av (\ref{eq:zero}) och (\ref{eq:inf}) följer att när $n \rightarrow \infty$
+$$\frac{2\cdot\sqrt{\frac{1}{n} + 2} -3}{\sqrt{n}-2} \rightarrow "\frac{2\sqrt{2} -3}{\infty}" = 0.$$
+Detta betyder att 
+$$\lim_{n\rightarrow \infty} \Bigg( \sqrt{\frac{1}{n} + 2} + \frac{2\cdot\sqrt{\frac{1}{n} + 2} -3}{\sqrt{n}-2}\Bigg) = \sqrt{2} + 0 = \sqrt{2}.$$
+\subsection{Svar}
+Gränsvärdet av 
+$$x_n = \frac{\sqrt{1+2n}-3}{\sqrt{n}-2}$$
+när $n \rightarrow \infty$ är $$\sqrt{2}.$$
+\end{document}

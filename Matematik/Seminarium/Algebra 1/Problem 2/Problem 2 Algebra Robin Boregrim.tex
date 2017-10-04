@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\begin{document}
+\title{Algebra Problem 2}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+
+\section{Uppgiften}
+För vilka $n \geq 0$ är $2^n + 2 \cdot 3^n$ delbart med $8$?
+\section{Lösning}
+\subsection{Allmän lösning}
+Först använder vi oss av att $x^n = (x^2)^{n/2}$ för att få fram tal som vi kan förenkla med moduliräkning.\\
+\begin{equation} \label{eq:start}
+2^n + 2 \cdot 3^n
+\end{equation}
+$$(2^2)^{n/2} + 2 \cdot (3^2)^{n/2}$$
+$$4^{n/2} + 2 \cdot 9^{n/2}$$
+\begin{equation} \label{eq:big4}
+16^{n/4} + 2 \cdot 9^{n/2}
+\end{equation}
+Talen 16 och 9 är bra eftersom $16 \equiv 0 \mod 8$ och $9 \equiv 1 \mod 8$.\\
+Eftersom vi nu vill använda oss av moduliräkning för att beräkna delbarhet med 8 måste vi undvika rottäcken då $x \equiv y \centernot\Rightarrow \sqrt{x} \equiv \sqrt{y}$.\\
+Vi måste därför ta hänsyn till två saker för att undvika rottecken:\\\\
+Säg att vi har termen $x^{n}$ som vi vill skriva om till $(x^y)^{n/y}$.\\
+H1. Om n är mindre än y måste det fallet räknas separat.\\
+H2. Om n inte är delbart med y måste termen förlängas till $x^{(n-z)} \cdot x^z$ där $n-z \equiv 0 \mod n $, vilket betyder att om skrivningen blir $(x^y)^{(n-z)/y} \cdot x^z $.\\
+
+Av H1 följer att fall då $n < 4$ räknas separat då den största roten vi har bland termer i ekvation (\ref{eq:big4}) är $4$.\\
+Av H2 följer att termen $16^{n/4}$ har fyra fall: $16^{n/4}$, $16^{(n-1)/4} \cdot 2$, $16^{(n-2)/4} \cdot 2^2$ och $16^{(n-2)/4} \cdot 2^3$.\\
+Av H2 följer även att termen $2 \cdot 9^{n/2}$ har två fall $2 \cdot 9^{n/2}$ när n är jämnt och $2 \cdot 3 \cdot 9^{(n-1)/2}$ när n är ojämnt.
+\newpage
+Av detta får vi dessa 4 fall av startekvationen (\ref{eq:start}) som vi sedan förenklar med moduliräkning.\\
+Fall 1 om $n \equiv 0 \mod 4$
+$$
+16^{n/4} + 2 \cdot 9^{n/2} \equiv 0^{n/4} + 2 \cdot 1^{n/2} = 2 
+$$
+Fall 2 om $n \equiv 1 \mod 4$
+$$
+16^{n/4} \cdot 2 + 2 \cdot 3 \cdot 9^{n/2} \equiv 0^{n/4} \cdot 2 + 2 \cdot 3 \cdot 1^{n/2} = 6 
+$$
+Fall 3 om $n \equiv 2 \mod 4$
+$$
+16^{n/4} \cdot 2^2 + 2 \cdot 9^{n/2} \equiv 0^{n/4} \cdot 2^2 + 2 \cdot 1^{n/2} = 2 
+$$
+Fall 4 om $n \equiv 3 \mod 4$
+$$
+16^{n/4} \cdot 2^3 + 2 \cdot 3 \cdot 9^{n/2} \equiv 0^{n/4} \cdot 2^3 + 2 \cdot 3 \cdot 1^{n/2} = 6 
+$$
+
+Av detta kan vi konstatera att (\ref{eq:start}) aldrig är delbar med 8 för $n \leq 4$ då  (\ref{eq:start}) antingen är kongurent med 2 eller 6 när $n \leq 4$.
+
+\subsection{Special fall}
+Då måste vi undersöka de 4 kvarvarande fallen för (\ref{eq:start}) där $n = 0,1,2,3$.\\
+Fall 1 $n = 0$
+$$2^0 + 2 \cdot 3^0 = 1 + 2 \cdot 1 = 3 \centernot\equiv 0 \mod 8$$
+Fall 2 $n = 1$
+$$2^1 + 2 \cdot 3^1 = 2 + 2 \cdot 3 = 8 \equiv 0 \mod 8$$
+Fall 3 $n = 2$
+$$2^2 + 2 \cdot 3^2 = 4 + 2 \cdot 9 = 22 \equiv 6 \centernot\equiv 0 \mod 8$$
+Fall 4 $n = 3$
+$$2^3 + 2 \cdot 3^3 = 8 + 2 \cdot  = 35 \equiv 3 \centernot\equiv 0 \mod 8$$
+
+Bara i fall 2 där $n = 1$ var $(\ref{eq:start}) \equiv 0 \mod 8$. \\
+Därför är $n=1$ svaret.  
+
+\subsection{Svar}
+$2^n + 2 \cdot 3^n$ där $n \geq 0$ är bara delbart med 8 om $n = 1$.
+\end{document}

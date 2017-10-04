@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\title{Algebra Problem 2}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+
+\section{Uppgiften}
+Lös rotekvationen $$2\sqrt{x+5}-\sqrt{x-3} = 5$$ för alla reella $x$.
+\section{Lösning}
+\subsection{Förenkling}
+För att lösa rotekvationen
+$$2\sqrt{x+5}-\sqrt{x-3} = 5$$ 
+vill vi få bort rottecken, därför börjar vi med att kvadrera båda led
+$$(2\sqrt{x+5}-\sqrt{x-3})^2 = 5^2$$ 
+$$4(x+5) - 4\sqrt{x+5}\sqrt{x-3} +(x-3) = 25$$
+fortsätter med att utveckla $4(x+5)$ och $(x-3)$
+$$4x+ 20 + x - 3 - 4\sqrt{x+5}\sqrt{x-3} +(x-3) = 25.$$
+Vi förenklar vänsterledet
+$$5x + 17 - 4\sqrt{x+5}\sqrt{x-3} +(x-3) = 25$$
+Vi isolerar sedan den kvarvarande rottermen  $ - 4\sqrt{x+5}\sqrt{x-3}$
+$$- 4\sqrt{x+5}\sqrt{x-3}= 25 - 5x - 17. $$
+Därefter förenklar vi högerledet
+$$- 4\sqrt{x+5}\sqrt{x-3} = 8 - 5x.$$
+Vi kvadrerar båda led för att få bort det kvarvarande rottecknet
+$$ (-4\sqrt{x+5}\sqrt{x-3})^2 = (8 - 5x)^2$$
+$$ 16(x^2 + 2x -15) = 25x^2-80x+64$$
+$$ 16x^2 + 32x - 240 = 25x^2-80x+64$$
+och för över alla termer till högerledet och förenklar det
+$$ 0 = 25x^2-80x+64 - 16x^2 - 32x + 240$$
+$$ 0 = 9x^2-112x+302.$$
+\subsection{Kvadratkompletering}
+Nu när vi har fått ut andragradsekvationen $$9x^2-112x+302=0$$ kan vi använda oss av rotformeln för andragradsekvationer:
+$$ax^2 + bx + c = 0 \Rightarrow x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+som kan härledas från $pq$-formeln som finns på sida 55-56 i Algebra 1$^1$.
+Det betyder att
+$$9x^2-112x+302 = 0 \Rightarrow x_{1,2} = \frac{-(-112) \pm \sqrt{(-112)^2 - 4 \cdot 9 \cdot 302}}{2 \cdot 9}$$
+Om vi förenklar detta får vi
+$$\Rightarrow x_{1,2} = \frac{ 112 \pm 40}{18}$$
+Och då kan vi lösa ut $x_1$ och $x_2$
+$$x_1 = \frac{ 112 - 40}{18} = \frac{72}{18} = 4$$
+$$x_2 = \frac{ 112 + 40}{18} = \frac{152}{18} = \frac{76}{9}.$$
+\newpage
+\subsection{Validera rötter}
+  Vi kan validera om rötterna stämmer igenom att substituera $x$ med $x_1$ och $x_2$ i ursprungs formeln och se om vi får en motsägelse.\\
+För att validera $x_1$ sätter vi $x=4$ i vänsterledet och får
+  $$2\sqrt{4+5}-\sqrt{4-3} = 5$$
+  $$VL =$$
+  $$2\sqrt{9}-\sqrt{1} =$$
+  $$2 \cdot 3-1 =$$
+  $$6 - 1 =$$
+  $$5 \Rightarrow$$
+  $$VL = HL$$
+  $x_1$ är då inte en falsk rot.\\
+  För att validera $x_2$ sätter vi $x=\frac{76}{9}$ i vänsterledet och får  
+  $$2\sqrt{\frac{76}{9}+5}-\sqrt{\frac{76}{9}-3} = 5$$
+  $$VL =$$
+  $$2\sqrt{\frac{121}{9}}-\sqrt{\frac{49}{9}} =$$
+  $$2 \cdot \frac{11}{3} - \frac{7}{3} =$$
+  $$\frac{22 - 7}{3} = $$
+  $$\frac{15}{3} =$$
+  $$5 \Rightarrow$$
+  $$VL = HL$$
+  $x_2$ är då inte en falsk rot.\\
+  
+\subsection{Svar}
+Lösningarna är på rotekvationen $2\sqrt{x+5}-\sqrt{x-3} = 5$ är:
+$$x_1 = 4$$
+$$x_2 = 8 + \frac{4}{9}$$
+\section{Diskussion}
+
+En observation man kan göra är att den ursprunliga ekvationen innehåller $\sqrt{x-3}$ vilket betyder att om $x < 3 $ kommer $\sqrt{x-3}$ att bli roten av något negativt, vilket blir ett imaginärt tal. Vi har inte heller någon annan term som kan bilda ett imaginärt tal så de imaginära delarna skulle eliminera varandra. Detta betyder att $x \geq 3 $.\\
+I detta fall hjälpte inte denna observation att lösa ut rötterna då både $x_1$ och $x_2$ är större än 3, men i ett liknande exempel skulle detta kunna eliminera en falsk rot.
+\section{Referenser}
+1 Bøgvard, Rickard och Xantcha, Qimh. \textit{Algebra 1}. Nionde tryckningen. Stockholms universitet. 2016.
+\end{document}
