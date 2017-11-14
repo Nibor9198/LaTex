@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\title{Analys Problem 4}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Beräkna följande generalisarade integral eller visa att den divergerar:
+$$\int_0^\infty \frac{dx}{x^2 +7x +10} $$
+\section{Lösning}
+\subsection{Uträkning}
+Vi vill beräkna $$f(x) = \int_0^\infty \frac{dx}{x^2 +7x +10}.$$
+Så vi börjar med att faktorisera polynomet $x^2 + 7x + 10$, detta gör vi igenom att hitta polynomets nollpunkter.
+$$x^2 + 7x + 10 = 0 \Rightarrow x = \frac{-7 \pm \sqrt{49 - 40}}{2}$$
+$$= \frac{-7 \pm 3}{2} \Rightarrow \left\{\begin{array}{c} 
+x_1 = -5\\
+x_2 = -2
+\end{array} \right. $$
+Detta betyder att
+$$ p(x) = \frac{1}{x^2 +7x +10} = \frac{1}{(x+5)(x+2)}$$
+För att lättare kunna integrera detta vill vi skriva om $p(x)$ på följande sätt:
+$$\frac{1}{(x+5)(x+2)} = \frac{A}{(x+5)} + \frac{B}{(x+2)}$$
+Vi bestämmer konstanterna $A$ och $B$ så likheten gäller.\\
+Multiplicera båda led med $(x+5)(x+2)$.
+$$1 = A(x+2) + B(x+5)$$
+Av detta kan vi skapa ett ekvationsystem.
+$$\left\{\begin{array}{ccc} 
+1 = 2A + 5B &&(1)\\
+0x = Ax + Bx&&(2)
+\end{array} \right.$$
+Av (2) kan vi lösa ut att
+$$0 = Ax + Bx = A + B \Rightarrow B = -A.$$
+Om vi stoppar in det vi fick av (2) i (1) får vi:
+$$1 = 5B - 2B = 3B \Rightarrow B = \frac{1}{3}$$
+Om vi sedan stoppar in värdet på $B$ i likheten vi fick av (2) får vi:
+$$A = -\frac{1}{3}$$
+Vi vet då att:
+$$\int_0^\infty \frac{dx}{x^2 +7x +10} =\int_0^\infty \frac{dx}{3(x+2)} - \frac{dx}{3(x+5)}$$
+Nu kan vi börja integrera integralen.
+$$=\frac{1}{3} \int_0^\infty \frac{dx}{(x+2)} - \frac{dx}{(x+5)}$$
+$$= \frac{1}{3}\Big[\ln|x+2| - \ln|x+5| \Big]_0^\infty $$
+$$= \frac{1}{3}\Big[\ln|\frac{x+2}{x+5}| \Big]_0^\infty $$
+Eftersom vi har en integral som går mot $\infty$ så gör vi ett gränsvärde med variabeln $t$ där $t\to\infty$. 
+$$\frac{1}{3} ( \lim_{t\to\infty}(\ln|\frac{t+2}{t+5}|) - \ln|\frac{0+2}{0+5}|)$$
+Vi förlänger bråket som innehåller variabeln $t$ med $1/t$
+$$\frac{1}{3}(\lim_{t\to\infty}(\ln|\frac{1+\frac{2}{t}}{1+\frac{2}{t}}|) - \ln|\frac{2}{5}|)$$
+Vi kan nu lösa ut gränsvärdet och förenkla.
+$$ \frac{1}{3}(\ln|\frac{1+0}{1+0}| - \ln|\frac{2}{5}|) =\frac{1}{3}( \ln 1 - \ln\frac{2}{5}) =\frac{1}{3} (\ln(\frac{1}{\frac{2}{5}})) =\frac{\ln\frac{5}{2}}{3}$$
+\subsection{Svar}
+$$\int_0^\infty \frac{dx}{x^2 +7x +10} =  \frac{\ln\frac{5}{2}}{3}$$
+\end{document}

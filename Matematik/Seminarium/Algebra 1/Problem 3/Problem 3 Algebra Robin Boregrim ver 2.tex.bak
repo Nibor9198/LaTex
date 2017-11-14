@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\begin{document}
+\title{Algebra Problem 3}
+\author{Robin Boregrim}
+
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Undersök vilka $x$ som uppfyller olikheten $$\frac{x^2-1}{x-4} \geq x.$$
+\section{Lösning}
+\subsection{Beräkningar}
+Det första vi kan observera är att $\frac{x^2-1}{x-4}$ inte är definerat för $x = 4$ efter som $\frac{x^2-1}{x-4}$ bildar en division med noll då $x = 4$, $x = 4$ är därför inte en lösning.\\
+Därefter kan vi multiplicera båda led med $x-4$ och dela in ekvationen i två fall beroende på om $x-4$ är positivt eller negativt, dvs om $x$ är större eller mindre än $4$. Vi förenklar även fallen.\\
+Fall A ($x > 4$):
+$$(x-4)\frac{x^2-1}{x-4} \geq (x-4)x$$
+$$x^2-1 \geq x^2 - 4x$$
+[subtrahera $x^2$ från båda led]
+$$-1 \geq - 4x$$
+[multiplicera båda led med $-\frac{1}{4}$]
+$$\frac{1}{4} \leq x.$$
+Fall B ($x < 4$):
+$$(x-4)\frac{x^2-1}{x-4} \leq (x-4)x$$
+$$x^2-1 \leq x^2 - 4x$$
+[subtrahera $x^2$ från båda led]
+$$-1 \leq - 4x$$
+[multiplicera båda led med $-\frac{1}{4}$]
+$$\frac{1}{4} \geq x.$$
+\newpage
+\subsection{Analys}
+Fall A säger; då om $x$ är större än 4 måste $x$ även vara större eller lika med $\frac{1}{4}$, vilket är sant för alla $x > 4$.\\
+Fall B säger; då om $x$ är mindre än 4 måste $x$ även vara mindre eller lika med $\frac{1}{4}$, vilket är sant för alla $x \leq \frac{1}{4}$.\\
+Fall A och B kombinerade ger då:
+$$x > 4 \vee x \leq \frac{1}{4}.$$
+\subsection{Svar}
+Olikheten $$\frac{x^2-1}{x-4} \geq x$$
+uppfylls av alla $x$ som är större en fyra eller mindre eller lika med $\frac{1}{4}$, dvs
+$$x > 4 \vee x \leq \frac{1}{4}.$$
+
+
+\end{document}

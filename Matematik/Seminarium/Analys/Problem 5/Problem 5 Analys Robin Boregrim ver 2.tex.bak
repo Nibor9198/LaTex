@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\title{Analys Problem 5}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Beräkna volymen av de områden som uppstår då det begränsade området i första kvadranten som begränsas av kurvorna $y = x^2$ och $y = x$ får rotera runt $x$- respektive  $y$-axeln.
+\section{Lösning}
+
+\subsection{Rotation runt $x$-axeln}
+Vi vill beräkna rotationsvolymen runt $x$-axeln av det begränsade området, vi kallar denna volym för $V_{bx}$.\\
+
+Vi börjar särskilja de två funktionerna igenom att låta
+$$f(x) = x$$och$$g(x) = x^2.$$
+
+
+Sedan sätter vi funktionerna $f(x)$ och $g(x)$ lika varandra för att beräkna eventuella skärningspunkter mellan funktionerna.
+$$f(x) = g(x) \Leftrightarrow$$
+$$x = x^2$$
+Villket betyder att skärningspunkterna är:
+$$
+\left\{\begin{array}{c}
+x_1 = 0 \\ x_2 = 1
+\end{array}\right. .$$
+Eftersom både $f(x)$ och $g(x)$ är kontinuerliga funktioner och de bara skär varandra i $x=0$ och $x=1$ vet vi att det begränsade området som vi vill rotera runt $x$-axeln ligger  i intervallet $x\in[0,1]$. Då vet vi att rotationsvolymen av det begränsade området $V_{bx}$  är differensen av rotations volymerna för $f(x)$ och $g(x)$ över intervallet $x\in[0,1]$.\\
+Vi beräknar rotationsvolymerna $V_f$ och $V_g$ för $f(x)$ respektive $g(x)$.
+$$V_g = \pi \int_0^1 x^2 dx = \pi \Big[\frac{x^3}{3}\Big]_0^1 = \frac{\pi}{3}$$
+$$V_f = \pi \int_0^1 \Big(x^2\Big)^2 dx = \pi\Big[\frac{x^5}{5}\Big]_0^1 = \frac{\pi}{5}$$
+Vi kan nu beräkna $V_{bx}$ igenom att ta differansen mellan $V_g$ och $V_f$.
+$$V_{bx} = V_g - V_f = \frac{\pi}{3} - \frac{\pi}{5}= \frac{5\pi}{15} - \frac{3\pi}{15} = \frac{2\pi}{15}$$
+Så $$V_{bx} = \frac{2\pi}{15}.$$ 
+\subsection{Rotation runt $y$-axeln}
+Vi vill även beräkna rotationsvolymen runt y axeln av det begränsade området, vi kallar denna volym för $V_{bx}$.\\
+
+Vi börjar med att beräkna inverserna $f^{-1}(y)$ och $g^{-1}(y)$ till funktionerna $f(x)$ respektive $g(x)$.
+$$f(x) = x \Rightarrow f^{-1}(y) = y$$
+$$g(x) = x^2 \Rightarrow g^{-1}(y) = \sqrt{y}$$
+Sendan sätter vi funktionerna $f^{-1}(y)$ och $g^{-1}(y)$ lika varandra för att beräkna eventuella skärningspunkter mellan funktionerna.
+$$ f^{-1}(y) = g^{-1}(y) \Rightarrow$$
+$$ y = \sqrt{y} $$
+Vi tar båda led upphöjt i 2.
+$$ y^2 = y$$
+Vilket då ger oss skärningspunkterna:
+$$\left\{\begin{array}{c}
+y_1 = 0 \\ y_2 = 1
+\end{array}\right. .$$ 
+Eftersom både $f^{-1}(y)$ och $g^{-1}(y)$ är kontinuerliga funktioner och de bara skär varandra i $y=0$ och $y=1$ vet vi att det begränsade området som vi vill rotera runt $y$-axeln ligger  i intervallet $y\in[0,1]$. Då vet vi att rotationsvolymen av det begränsade området $V_{by}$ är differensen av rotations volymerna för $f^{-1}(y)$ och $g^{-1}(y)$ över intervallet $y\in[0,1]$.\\
+Vi beräknar rotationsvolymerna $V_{f^{-1}}$ och $V{g^{-1}}$ för $f^{-1}(y)$ respektive $g^{-1}(y)$.
+$$V_{g^{-1}} = \pi \int_0^1 \Big(\sqrt{y}\Big)^2 dy = \pi \Big[\frac{ y^{2}}{2}\Big]_0^1 = \frac{\pi}{2}$$
+$$V_{f^{-1}} = \pi \int_0^1 y^2 dy = \pi\Big[\frac{y^3}{3}\Big]_0^1 = \frac{\pi}{3}$$
+Vi kan nu beräkna $V_{bx}$ igenom att ta differansen mellan $V_{g^{-1}}$ och $V_{f^{-1}}$.
+$$V_{by} = V_{g^{-1}} - V_{f^{-1}} =\frac{\pi}{2} - \frac{\pi}{3} = \frac{3\pi}{6} - \frac{2\pi}{6} = \frac{\pi}{6}.$$
+Så
+$$V_{by} =  \frac{\pi}{6}.$$
+\subsection{Svar}
+Rotations volymerna av det begränsade området mellan funktionerna $y = x$ och $y = x^2$ när den roterar runt $x$-axeln, $V_{bx}$, och när den roterar runt $y$-axeln, $V_{by}$, är båda lika med $\frac{2\pi}{15}$ respektive $\frac{\pi}{6}$, dvs
+$$V_{bx} = \frac{2\pi}{15} $$
+och
+$$ V_{by} = \frac{\pi}{6}.$$
+\end{document}

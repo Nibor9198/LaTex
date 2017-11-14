@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\title{Analys Problem 6}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Bestäm största och minsta värdet för funktionen $$f(x,y) = \cos x \sin y$$
+på området $\{ (x,y): 0\leq x \leq \pi, 0 \leq y \leq \pi \}$.
+\section{Lösning}
+Om man studerar funktionerna $\sin y$ och $\cos x$ över intervallet ser vi att 
+$$\{0 \leq \sin y \leq 1, -1 \leq \cos x \leq 1 \}.$$
+Och då ser man ganska lätt att produkten av $\sin y$ och $\cos x$ antar sitt minsta värde "$-1$" när $$\{\sin y = 1, \cos x =-1 \}$$ och sitt maximala värde "$1$" när $$\{\sin y = 1, \cos x =1 \}.$$
+\subsection{Svar}
+Max värdet för $f(x,y)$ är $1$ när $$\{\sin y = 1, \cos x =1 \}.$$
+Min värdet för $f(x,y)$ är $-1$ när $$\{\sin y = 1, \cos x =-1 \}.$$
+\end{document}

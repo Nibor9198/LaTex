@@ -3,6 +3,7 @@
 \usepackage{centernot}
 \usepackage[parfill]{parskip}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \begin{document}
 \title{Analys Problem 2}
 \author{Robin Boregrim}
@@ -13,7 +14,47 @@
 \section{Uppgiften}
 För vilka värden på $a> 0$ har ekvationen $a^x = x$ lösningar?
 \section{Lösning}
+\subsection{Omskrivning}
+För att kunna lösa ut $a$ så skriver vi om ekvationen $a^x = x$ så att $a$ blir en funktion av $x$.
+\begin{equation}\label{start}
+a^x = x
+\end{equation}
+$$\Leftrightarrow (a^x)^{\frac{1}{x}} = x^{\frac{1}{x}}, x \centernot= 0$$
+\begin{equation}\label{re}
+\Leftrightarrow a = x^{\frac{1}{x}}, x \centernot= 0
+\end{equation}
+Ekvation (\ref{re}) inte är definerad för $x=0$, men detta är inte ett problem då 
+$$a^0 = 1, \forall a\in {\rm I\!R}$$ så $a^0$ kommer aldrig vara lika med $0$, $x = 0$ är därför aldrig en lösning på (\ref{start}).\\
+En annan sak värd att notera är att det finns inga positiva reella $a$ som är lösning för negativa $x$. Detta på grund av $a^x$ alltid kommer vara possitivt för positiva reella $x$ så $a^x$ kommer inte kunna vara lika med $x$ för $x<0$.\\
+Vi vet därför att definitionsmängden på x är
+$$D_f = x > 0.$$
+\subsection{Derivata räkning}
+Nu vet vi att $a$ beskrivs av funktionen $a = x^{\frac{1}{x}}$ så vi räknar ut derviatan av den funktionen för att sen ta reda på eventuella extrempunkter.
+$$a' = \frac{dx}{da}(x^{\frac{1}{x}})$$
+$$= \frac{dx}{da}(e^{\ln(x^{\frac{1}{x}})})$$
+$$= \frac{dx}{da}(e^{\frac{1}{x}\ln(x)})$$
+$$=\frac{dx}{da}(\frac{\ln x}{x}) \cdot e^{\frac{1}{x}\ln x}$$
+$$=(\frac{\ln x}{x})' \cdot x^{\frac{1}{x}}$$
+$$=\frac{x \cdot \frac{dx}{da}(\ln x) - \ln x \cdot \frac{dx}{da} (x)}{x^2} \cdot x^{\frac{1}{x}}$$
+$$=\frac{x\cdot \frac{1}{x} - \ln x \cdot 1}{x^2} \cdot x^{\frac{1}{x}}$$
+\begin{equation}\label{prim}
+a' =\frac{1 - \ln x}{x^2} \cdot x^{\frac{1}{x}}
+\end{equation}
+Nu behöver vi räkna ut för vilka $x$ som $a'=0$ för att hitta eventuella extrempunkter.
+Varken $x^{\frac{1}{x}}$ eller $\frac{1}{x^2}$ kan bli 0, vilket betyder att om (\ref{prim})$=0$ måste 
+$$1-\ln x = 0$$
+$$1 = \ln x$$
+$$e^1 = e^{\ln x}$$
+$$e^1 = e^{\ln x}$$
+$$x = e$$
+Nu när vi vet att $a'$ endast har en rot som är $e$ vill vi veta om roten är en maximi-, mini- eller terrasspunkt.\\
+Både $x^{\frac{1}{x}}$ och $\frac{1}{x^2}$ är alltid possetiva för $\forall x\in {\rm I\!R} \cup D_f$.
+Detta betyder att $a'$ är positivt eller negativt beroende på om $1-\ln x$ är positivt eller negativt.\\
+Eftersom funktionen $\ln x$ är strängt växande och $\ln e = 1$ är $ln x < 1$ om $x < e$ och $ln x > 1$ om $x > e$. \\
+Vilket i sin tur betyder att $a'$ är positiv för $x < e$ och negativ för $x > e$. Roten $x = e$ är därför en global maximipunkt för (\ref{re}).\\
+Av detta följer då att $a \leq e^{\frac{1}{e}}.$ Eftersom $a$ var större än noll per definition får vi:
+$$0 < a \leq e^{\frac{1}{e}}.$$
 \subsection{Svar}
-\section{Diskussion}
-\section{Referenser}
+Ekvationen $a^x = x$ har lösningar i internvallet $$0 < a \leq e^{\frac{1}{e}}.$$
+
 \end{document}

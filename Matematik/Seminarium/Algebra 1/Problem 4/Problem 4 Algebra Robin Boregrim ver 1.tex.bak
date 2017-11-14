@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\title{Algebra Problem 4}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Lös för varje reellt tal $a$ ekvationssystemet\\
+$$
+\left\{\begin{array}{ccccc}
+ x & -y & +z & = & a \\
+ x & +y & +3z & = & a+2\\
+ 2x & -2y & (a+1)z & = & a+1
+\end{array}\right.
+$$
+
+
+
+\section{Lösning}
+\subsection{Matriser och Radoperationer}
+Först så gör vi om ekvationssystemet till en matris och använder tillåtna radoperationer för att sedan försöka lösa ut ekvationssystemet med Gauss-Jordan eliminering.
+$$
+\left(\begin{array}{ccc|c}  
+ 1 & -1 & 1 & a \\
+ 1 & 1 & 3 & a+2\\
+ 2 & -2 & a+1 & a+1
+\end{array}\right)
+$$
+Vi börjar med att ta bort första raden ifrån andra raden
+$$
+\left(\begin{array}{ccc|c}  
+ 1 & -1 & 1 & a \\
+ 0 & 2 & 2 & 2\\
+ 2 & -2 & a+1 & a+1
+\end{array}\right)
+$$
+Sen tar vi bort två gånger första raden ifrån tredje raden
+$$
+\left(\begin{array}{ccc|c}  
+ 1 & -1 & 1 & a \\
+ 0 & 2 & 2 & 2\\
+ 0 & 0 & a-1 & 1-a
+\end{array}\right)
+$$
+
+\subsection{Analys av ekvationssystemet}
+Om vi gör om den nu förenklade matrisen tillbaka till ett ekvationssystem får vi:
+$$
+\left\{\begin{array}{ccccc}
+ x & -y & +z & = & a \\
+  & 2y & +2z & = & 2\\
+  &  & (a-1)z & = & 1-a
+\end{array}\right.
+\begin{array}{c}
+(1)\\ (2) \\ (3)
+\end{array}
+$$\\\\
+Av (3) kan vi observera att vi får 2 fall.\\\\
+Fall 1: \\
+	Om $a \centernot = 1$ får vi ett ekvationssystem med oändligt många lösningar som beror på $a$ där (3) ger $$(a-1)z = (1-a).$$
+Fall 2:\\
+Om $a = 1$ får vi ett ekvationssystem med oändligt många lösningar som beror på $z$ då (3) ger:
+	$$(a-1)z = (1-a), a = 1 \Leftrightarrow $$
+	$$ (1-1)z = (1-1) \Leftrightarrow $$
+	$$ 0=0.$$
+\subsection{Lösning av ekvationssystemet}
+\subsubsection{Fall 1}
+När $a \centernot = 1$ ger (3):
+
+$$z = \frac{1-a}{a-1} = \frac{1-a}{-1 \cdot (1-a)} = \frac{1}{-1} = -1$$
+$$z = -1$$
+Av detta följer att (2) ger:
+$$2y + 2 \cdot(-1) = 2$$
+$$y-1=1$$
+$$y=2$$
+Av detta följer att (1) ger:
+$$x -2 + (-1) = a$$
+$$x-3 = a$$
+$$x = a+3$$\\
+Då får vi ekvationssystemet
+$$
+\left\{\begin{array}{ccc}
+ x & = & a+3\\
+ y & = & 2\\
+ z & = & -1
+\end{array}\right.
+$$
+\subsubsection{Fall 2}
+Om vi sätter in $a = 1$ i ekvationssystemet får vi
+$$
+\left\{\begin{array}{ccccc}
+ x & -y & +z & = & 1 \\
+  & 2y & +2z & = & 2\\
+  &  & (1-1)z & = & 1-1
+\end{array}\right.
+,$$
+vilket kan förenklas till
+$$
+\left\{\begin{array}{ccccc}
+ x & -y & +z & = & 1 \\
+  & 2y & +2z & = & 2\\
+  &  & 0 & = & 0
+\end{array}\right.
+\begin{array}{c}
+(1)\\ (2) \\ (3)
+\end{array}
+ .$$
+ 
+ Ekvationen (3) blir då $0 = 0$ vilket alltid stämmer oberoende av några variabler. Detta betyder att vi har 2 ekvationer som beror på 3 variabler vilket i sin tur betyder att vi kommer ha oändligt många lösningar som beror på en variabel som jag kallar för $b$.\\
+ Vi låter $z = b$.\\
+ Av detta följer att (2) ger
+ $$2y + 2b= 2$$
+ $$y+b=1$$
+ $$y= 1-b.$$
+ Och av detta följer att (1) ger
+ $$x -(1-b)+b = 1$$
+ $$x - 1 +2b = 1$$
+ $$x = 2 - 2b.$$\\
+ Och vi kan sammanställa detta i ett ekvationssystem
+ $$
+\left\{\begin{array}{ccc}
+ x & = & 2-2b	\\
+ y & = & 1-b	\\
+ z & = & b
+\end{array}\right.
+$$
+\subsection{Svar}
+Om $a \centernot = 1$ är lösningarna till är lösningarna till ekvationssysytemet
+$$
+\left\{\begin{array}{ccc}
+ x & = & a+3\\
+ y & = & 2\\
+ z & = & -1
+\end{array}\right.
+.$$
+Om $a=1$ så är lösningarna på ekvationssystemet
+$$
+\left\{\begin{array}{ccc}
+ x & = & 2-2b	\\
+ y & = & 1-b	\\
+ z & = & b
+\end{array}\right.
+$$
+för alla godtyckliga $b$.
+\end{document}

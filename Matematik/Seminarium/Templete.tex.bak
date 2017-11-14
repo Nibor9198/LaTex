@@ -4,7 +4,6 @@
 \usepackage[parfill]{parskip}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{graphicx}
 \begin{document}
 \title{• Problem •}
 \author{Robin Boregrim}

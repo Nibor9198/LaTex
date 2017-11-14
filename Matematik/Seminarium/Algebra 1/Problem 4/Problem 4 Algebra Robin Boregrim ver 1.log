@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.5)  8 OCT 2017 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.5)  15 OCT 2017 22:19
 entering extended mode
-**"./Problem 2 Analys Robin Boregrim ver 1.tex"
-("Problem 2 Analys Robin Boregrim ver 1.tex"
+**"./Problem 4 Algebra Robin Boregrim ver 1.tex"
+("Problem 4 Algebra Robin Boregrim ver 1.tex"
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 ("E:\Users\Robin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -421,8 +421,8 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) ("Problem 2 Analys Robin Boregrim ver 1.aux")
-\openout1 = `"Problem 2 Analys Robin Boregrim ver 1.aux"'.
+)) ("Problem 4 Algebra Robin Boregrim ver 1.aux")
+\openout1 = `"Problem 4 Algebra Robin Boregrim ver 1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -444,41 +444,51 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 ("E:\Users\Robin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) ("Problem 2 Analys Robin Boregrim ver 1.toc")
+) ("Problem 4 Algebra Robin Boregrim ver 1.toc")
 \tf@toc=\write3
-\openout3 = `"Problem 2 Analys Robin Boregrim ver 1.toc"'.
+\openout3 = `"Problem 4 Algebra Robin Boregrim ver 1.toc"'.
 
  [1
 
-{C:/Users/Robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-("Problem 2 Analys Robin Boregrim ver 1.aux") ) 
+{C:/Users/Robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+[2] [3] [4] [5] ("Problem 4 Algebra Robin Boregrim ver 1.aux") ) 
 Here is how much of TeX's memory you used:
- 1466 strings out of 493323
- 16755 string characters out of 3130016
- 73158 words of memory out of 3000000
- 5019 multiletter control sequences out of 15000+200000
+ 1463 strings out of 493323
+ 16750 string characters out of 3130016
+ 74158 words of memory out of 3000000
+ 5016 multiletter control sequences out of 15000+200000
  11352 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,26p,304b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/Users/Robin/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Users/Robin/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Us
-ers/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Users/Robin/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users/Robin/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/Users/Ro
-bin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Problem 2 Analys Robin Boregrim ver 1.pdf" (3 pages, 131316 
-bytes).
+ 27i,7n,26p,331b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Users/Robin
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E
+:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><E:/Users/Robin/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Users/Robin/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users/Robin/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/Us
+ers/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb>
+Output written on "Problem 4 Algebra Robin Boregrim ver 1.pdf" (5 pages, 100162
+ bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
