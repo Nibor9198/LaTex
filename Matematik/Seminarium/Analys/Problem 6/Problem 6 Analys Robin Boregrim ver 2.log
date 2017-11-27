@@ -1,7 +1,7 @@
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.23)  26 NOV 2017 21:17
 entering extended mode
-**"./Problem 6 Algebra Robin Boregrim ver 1.tex"
-("Problem 6 Algebra Robin Boregrim ver 1.tex"
+**"./Problem 6 Analys Robin Boregrim ver 2.tex"
+("Problem 6 Analys Robin Boregrim ver 2.tex"
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -437,8 +437,8 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("Problem 6 Algebra Robin Boregrim ver 1.aux")
-\openout1 = `"Problem 6 Algebra Robin Boregrim ver 1.aux"'.
+("Problem 6 Analys Robin Boregrim ver 2.aux")
+\openout1 = `"Problem 6 Analys Robin Boregrim ver 2.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -528,48 +528,33 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-("Problem 6 Algebra Robin Boregrim ver 1.toc")
+("Problem 6 Analys Robin Boregrim ver 2.toc")
 \tf@toc=\write3
-\openout3 = `"Problem 6 Algebra Robin Boregrim ver 1.toc"'.
+\openout3 = `"Problem 6 Analys Robin Boregrim ver 2.toc"'.
 
  [1
 
-{C:/Users/robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (40.56685pt too wide) in paragraph at lines 23--25
-\OT1/cmr/m/n/10.95 Om vi nu stop-par in detta varde pa t i lin-jens formel f
-ar vi ut skarningspunkten. 
- []
-
-[2]
-<fig1.png, id=16, 165.18857pt x 165.18857pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 41. on input line 41.
-Package pdftex.def Info: Requested size: 165.18814pt x 165.18814pt on input lin
-e 41.
- [3 <./fig1.png>] [4] ("Problem 6 Algebra Robin Boregrim ver 1.aux") ) 
+{C:/Users/robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+("Problem 6 Analys Robin Boregrim ver 2.aux") ) 
 Here is how much of TeX's memory you used:
- 2664 strings out of 493312
- 34082 string characters out of 3138898
- 93372 words of memory out of 3000000
- 6163 multiletter control sequences out of 15000+200000
+ 2658 strings out of 493312
+ 33992 string characters out of 3138898
+ 90372 words of memory out of 3000000
+ 6159 multiletter control sequences out of 15000+200000
  11352 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,26p,362b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Problem 6 Algebra Robin Boregrim ver 1.pdf" (4 pages, 129551
- bytes).
+ 41i,6n,26p,308b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Problem 6 Analys Robin Boregrim ver 2.pdf" (2 pages, 82733 b
+ytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
