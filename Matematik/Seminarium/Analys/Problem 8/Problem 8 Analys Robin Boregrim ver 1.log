@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.5)  11 DEC 2017 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.5)  11 DEC 2017 01:47
 entering extended mode
-**"./Problem 7 Analys Robin Boregrim ver 1.tex"
-("Problem 7 Analys Robin Boregrim ver 1.tex"
+**"./Problem 8 Analys Robin Boregrim ver 1.tex"
+("Problem 8 Analys Robin Boregrim ver 1.tex"
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 ("E:\Users\Robin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -460,8 +460,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-) ("Problem 7 Analys Robin Boregrim ver 1.aux")
-\openout1 = `"Problem 7 Analys Robin Boregrim ver 1.aux"'.
+) ("Problem 8 Analys Robin Boregrim ver 1.aux")
+\openout1 = `"Problem 8 Analys Robin Boregrim ver 1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -553,46 +553,41 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 ("E:\Users\Robin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) ("Problem 7 Analys Robin Boregrim ver 1.toc")
+) ("Problem 8 Analys Robin Boregrim ver 1.toc")
 \tf@toc=\write3
-\openout3 = `"Problem 7 Analys Robin Boregrim ver 1.toc"'.
+\openout3 = `"Problem 8 Analys Robin Boregrim ver 1.toc"'.
 
  [1
 
-{C:/Users/Robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Fig1.png, id=10, 330.37714pt x 247.78285pt>
-File: Fig1.png Graphic file (type png)
- <use Fig1.png>
-Package pdftex.def Info: Fig1.png used on input line 36.
-(pdftex.def)             Requested size: 330.37631pt x 247.78224pt.
- [2] [3 <./Fig1.png>] [4] ("Problem 7 Analys Robin Boregrim ver 1.aux") ) 
+{C:/Users/Robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+
+("Problem 8 Analys Robin Boregrim ver 1.aux") ) 
 Here is how much of TeX's memory you used:
- 2721 strings out of 493323
- 36164 string characters out of 3130016
+ 2711 strings out of 493323
+ 36063 string characters out of 3130016
  96457 words of memory out of 3000000
- 6209 multiletter control sequences out of 15000+200000
- 11973 words of font info for 45 fonts, out of 3000000 for 9000
+ 6203 multiletter control sequences out of 15000+200000
+ 11352 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,7n,26p,269b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/Us
-ers/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+ 39i,6n,26p,279b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Users/Robin/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Users/Robin/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Us
+ers/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex
 10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/Users/Robin/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/Users/Robin/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Users
-/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><E:/Users/Robin/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Users/Robin/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Problem 7 Analys Robin Boregrim ver 1.pdf" (4 pages, 160894 
+fonts/cm/cmmi10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Users/Robin/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users/Robin/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/Users/R
+obin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><E:/Users/Robin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb>
+Output written on "Problem 8 Analys Robin Boregrim ver 1.pdf" (4 pages, 123088 
 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

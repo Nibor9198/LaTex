@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{centernot}
+\usepackage[parfill]{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\title{Analys Problem 8}
+\author{Robin Boregrim}
+\maketitle
+\renewcommand{\contentsname}{Innehållsförteckning}
+\tableofcontents
+\newpage
+\section{Uppgiften}
+Bestäm alla lösningar till differentialekvationen $$3y'' + 12 y = 2\sin^2 x.$$ 
+\section{Lösning}
+\subsection{Homogen lösning}
+Först så löser vi ut den homogena lösningen till differentialekvationen $y_h$.
+Då löser vi ut alla lösningar till $3y'' + 12 y = 0$.
+Detta kan göras med att lösa ut den karaktäristiska ekvationen $3r^2 +12 = 0$.
+$$3r^2 = -12 \Leftrightarrow$$ $$r^2 = -\frac{12}{3}\Leftrightarrow$$ $$r^2 = -4 \Leftrightarrow$$ $$r = \pm 2i$$
+Detta beryder att den homogena ekvationen är: $$y_h = C_1 e^{2ix} + C_2 e^{-2ix} = A\cos (2x) + B \sin (2x)$$
+\subsection{Partikulär lösning}
+Nu ska vi beräkna den partikulära lösningen $y_p$. För detta kan vi först skriva om höger ledet på följande sätt: $$2\sin^2 x =$$$$ 2\sin^2 x + \cos^2 x - \cos^2 x = $$$$ 1+ \sin^2 x - \cos^2 x =$$$$1-\cos(2x).$$
+Detta betyder att: $$3y_p'' + 12 y_p = 1-\cos(2x).$$
+Vi kan nu dela upp $y_p$ så att $y_p = y_{p1} + y_{p2}$ där: $$3y_{p1}'' + 12 y_{p1} = 1$$ och $$3y_{p2}'' + 12 y_{p2} = -\cos(2x).$$
+Vi löser först ut $y_{p1}$.
+$$3y_{p1}'' + 12 y_{p1} = 1 \Rightarrow y_{p1} = a \Rightarrow y_{p1}'' = 0 $$
+(där $a$ är en konstant)
+$$\Rightarrow 12 y_{p1} = 1 \Leftrightarrow$$$$ y_{p1} = \frac{1}{12}.$$
+Nu löser vi ut $y_{p2}$, men eftersom $-\cos(2x)$ är en trigonometrisk funktion kommer vi använda oss av hjälpfunktionen $$3u'' + 12 u = -e^{2ix}$$ där $$\Re(-e^{2ix}) = - \cos(2x).$$
+Vi substituerar $u = -ze^{2ix}$ och beräknar $u'' i z$.
+$$u = -ze^{2ix}$$
+$$u' = -e^{2ix}(z' +2iz)$$
+$$u'' =- e^{2ix}(z'' +4iz' - 4z).$$
+Detta betyder då att:
+ $$- e^{2ix}3(z'' +4iz' - 4z) -e^{2ix} 12z = -e^{2ix}.$$
+Då kan vi dela båda led med $-e^{2ix}$,
+$$ 3(z'' +4iz' - 4z) +12z = 1$$
+och lösa ut $z$.
+$$ 3z'' +12iz' - 12z +12z = 1$$
+$$ 3z'' +12iz' = 1$$
+$$\Rightarrow z'= a \Rightarrow z=ax \Rightarrow z''= 0$$
+(där $a$ är en konstant)
+$$12ia = 1 \Leftrightarrow $$$$ a = \frac{1}{12i} = -\frac{i}{12} \Rightarrow $$
+$$z = -\frac{i}{12} \Rightarrow$$
+Nu är det bara att få ut svaret i $y$.
+$$u = -ze^{2ix} = \frac{i}{12} e^{2ix} = \frac{i}{12}\big(\cos (2x) + i\sin(2x)\big) = \Bigg(\frac{i\cos(2x)}{12} - \frac{\sin(2x)}{12}\Bigg)$$
+$$y_{p2} = \Re(u) \Re\Bigg(\frac{i\cos(2x)}{12} - \frac{\sin(2x)}{12}\Bigg) =  - \frac{\sin(2x)}{12}$$
+$$y_p = y_{p1} + y_{p2} = \frac{1}{12} - \frac{\sin(2x)}{12}$$
+$$y = y_h + y_p = A\cos (2x) + B \sin (2x)+ \frac{1}{12} - \frac{\sin(2x)}{12}$$
+\subsection{Svar}
+Alla lösningar till differentialekvationen beskrivs av: 
+$$y = y_h + y_p = A\cos (2x) + B \sin (2x)+ \frac{1}{12} - \frac{\sin(2x)}{12}$$
+\end{document}
